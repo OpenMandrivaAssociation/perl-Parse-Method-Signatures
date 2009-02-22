@@ -1,6 +1,6 @@
 %define module   Parse-Method-Signatures
 %define version  1.002000
-%define release  %mkrel 1
+%define release  %mkrel 2
 
 Name:       perl-%{module}
 Version:    %{version}
@@ -23,6 +23,7 @@ BuildRequires: perl(Test::More)
 BuildRequires: perl(Text::Balanced)
 BuildRequires: perl(aliased)
 BuildRequires: perl(namespace::clean)
+Requires: perl(MooseX::Traits)
 BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}
 
