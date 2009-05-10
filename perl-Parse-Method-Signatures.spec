@@ -1,5 +1,5 @@
 %define module   Parse-Method-Signatures
-%define version  1.003004
+%define version  1.003005
 %define release  %mkrel 1
 
 Name:       perl-%{module}
