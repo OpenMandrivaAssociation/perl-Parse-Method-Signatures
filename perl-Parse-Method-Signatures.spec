@@ -1,15 +1,16 @@
-%define module   Parse-Method-Signatures
-%define version  1.003008
-%define release  %mkrel 1
+%define upstream_name   Parse-Method-Signatures
+%define upstream_version  1.003009
 
-Name:       perl-%{module}
-Version:    %{version}
-Release:    %{release}
-License:    GPL or Artistic
-Group:      Development/Perl
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:    Turn parse TC data into Moose TC object
-Url:        http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/Parse/%{module}-%{version}.tar.gz
+License:    GPL+ or Artistic
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Parse/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(List::MoreUtils)
 BuildRequires: perl(Moose)
@@ -27,7 +28,7 @@ BuildRequires: perl(aliased)
 BuildRequires: perl(namespace::clean)
 Requires: perl(MooseX::Traits)
 BuildArch: noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Inspired by the Perl6::Signature manpage but streamlined to just support
@@ -35,7 +36,7 @@ the subset deemed useful for the TryCatch manpage and the
 MooseX::Method::Signatures manpage.
 
 %prep
-%setup -q -n %{module}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
