@@ -4,6 +4,7 @@
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
 Release:    %mkrel 1
+Epoch:      1
 
 Summary:    Turn parse TC data into Moose TC object
 License:    GPL+ or Artistic
