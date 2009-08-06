@@ -1,5 +1,5 @@
 %define upstream_name   Parse-Method-Signatures
-%define upstream_version  1.003009
+%define upstream_version  1.003010
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -27,9 +27,10 @@ BuildRequires: perl(Data::Dump)
 BuildRequires: perl(PPI)
 BuildRequires: perl(aliased)
 BuildRequires: perl(namespace::clean)
-Requires: perl(MooseX::Traits)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
+
+Requires: perl(MooseX::Traits)
 
 %description
 Inspired by the Perl6::Signature manpage but streamlined to just support
@@ -58,4 +59,3 @@ rm -rf %buildroot
 %doc Changes
 %{_mandir}/man3/*
 %perl_vendorlib/Parse
-
