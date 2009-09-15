@@ -1,5 +1,5 @@
 %define upstream_name   Parse-Method-Signatures
-%define upstream_version 1.003011
+%define upstream_version 1.003012
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
