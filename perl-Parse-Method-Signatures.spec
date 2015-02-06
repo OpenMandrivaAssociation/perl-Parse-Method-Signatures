@@ -2,7 +2,7 @@
 %define upstream_version 1.003016
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	3
 Epoch:		1
 
 Summary:	Turn parse TC data into Moose TC object
