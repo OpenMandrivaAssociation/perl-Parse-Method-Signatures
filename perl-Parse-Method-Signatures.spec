@@ -8,7 +8,7 @@ Epoch:		1
 Summary:	Turn parse TC data into Moose TC object
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Parse/Parse-Method-Signatures-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
