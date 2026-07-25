@@ -1,15 +1,15 @@
 %define upstream_name   Parse-Method-Signatures
-%define upstream_version 1.003016
+%define upstream_version 1.003019
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 Epoch:		1
 
 Summary:	Turn parse TC data into Moose TC object
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Parse/Parse-Method-Signatures-%{upstream_version}.tar.gz
+Url:		http://github.com/ashb/Parse-Method-Signatures/tree/master
+Source0:	https://cpan.metacpan.org/authors/id/K/KE/KENTNL/Parse-Method-Signatures-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
