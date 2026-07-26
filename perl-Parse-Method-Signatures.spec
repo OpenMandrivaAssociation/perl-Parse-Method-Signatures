@@ -1,15 +1,14 @@
 %define upstream_name   Parse-Method-Signatures
-%define upstream_version 1.003019
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.003019
+Release:	2
 Epoch:		1
 
 Summary:	Turn parse TC data into Moose TC object
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://github.com/ashb/Parse-Method-Signatures/tree/master
-Source0:	https://cpan.metacpan.org/authors/id/K/KE/KENTNL/Parse-Method-Signatures-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/K/KE/KENTNL/Parse-Method-Signatures-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -38,7 +37,7 @@ the subset deemed useful for the TryCatch manpage and the
 MooseX::Method::Signatures manpage.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -78,8 +77,7 @@ make test
 + Revision: 399262
 - bumping epoch to take new version into account
 - update to 1.003009
-- using %%perl_convert_version
-- fixed license field
+- using %1.003019 fixed license field
 
 * Sat Jun 27 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.003008-1mdv2010.0
 + Revision: 389801
